@@ -21,14 +21,12 @@ export default {
 </script>
 
 <style scoped>
-  #box-nav{
-    box-shadow: #000000 10px 10px 10px 10px !important;
-  }
+  
 
   #nav {
     background-color: #222;
     border-bottom: 4px solid #111111a9;
-    box-shadow: 10px 10px 10px 10px #000000;
+    box-shadow: 0px 1px 10px 4px #111111a9;
     padding: 15px 50px !important;
     display: flex;
     justify-content: flex-end;

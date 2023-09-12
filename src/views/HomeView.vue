@@ -13,7 +13,7 @@ export default {
 <template>
 <Banner />
   <div class="main-container">
-    <h1>Monte o seu Hamburguer</h1>
+    
     <BurgerForm />
   </div>
 </template>

@@ -1,6 +1,11 @@
 <template>
     <footer id="footer">
-        <p>Make Your Burguer &copy; 2023</p>
+        <p>Make Your Burguer &copy; 2023 </p>
+        <div class="fotter-icons">
+            <a href=""><img src="" alt="" class="icons"></a>
+            <a href=""><img src="" alt="" class="icons"></a>
+        </div>
+        
     </footer>
 
 </template>

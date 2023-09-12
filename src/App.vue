@@ -25,13 +25,16 @@ export default {
 
 <style>
 *{
+  transition: .5s;
   margin: 0!important;
   padding: 0!important;
   box-sizing: border-box; 
- 
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 body{
    background-color: #ddd;
+   color: #222;
 }
 #app{
   display: flex;
