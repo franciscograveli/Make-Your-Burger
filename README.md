@@ -35,10 +35,10 @@ Certifique-se de ter o Node.js instalado em sua máquina antes de prosseguir com
 5. Inicie o aplicativo em desenvolvimento:
 
    ```bash
-   npm run dev
+   npm run dev -- --dev 8080
    ```
 
-6. Abra o navegador e acesse [http://localhost:5173](http://localhost:5173) para começar a criar seu hambúrguer personalizado!
+6. Abra o navegador e acesse [http://localhost:8080](http://localhost:8080) para começar a criar seu hambúrguer personalizado!
 
 ## Funcionalidades Principais
 
