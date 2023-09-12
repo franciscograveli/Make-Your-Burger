@@ -1,6 +1,6 @@
 <template>
    <div class="main">
-    <h1>Chico's Burguer,</h1>
+    <h1>Chico's Burger,</h1>
     <p >Onde o sabor é de outro mundo!!</p>
        <Message :msg="msg" v-show="msg"/>
        <div>
@@ -43,7 +43,6 @@
 </template>
 
 <script>
-import Swal from 'sweetalert2'
 import Message from './Message.vue'
 
 export default {
@@ -126,6 +125,12 @@ export default {
 }
 </script>
 <style scoped>
+p{
+  background-color: #fcba03;
+  padding: 0 1rem !important;
+  margin-bottom: 1rem  !important;
+}
+
 .option{
   color: #222;
 }

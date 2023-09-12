@@ -1,6 +1,7 @@
 <template>
 <div class="main">
     <Message :msg="msg" v-show="msg"/>
+  
   <table id="burger-table" v-if="burgers">
     
   <thead>
@@ -38,17 +39,19 @@
 
 <div v-else>
   <h2>Não há pedidos no momento!</h2>
+  <ReturnHome />
 </div>
 </div>
 </template>
 <script>
 import Message from '@/components/Message.vue';
+import ReturnHome from '@/components/ReturnHome.vue';
 
 export default {
     name: 'Dashboard',
     data(){
         return {
-             burgers: null,
+             burgers: [],
             burger_id: null,
             status: [],
             msg: null
@@ -58,9 +61,13 @@ export default {
         async getPedidos(){
             const req = await fetch('http://localhost:3000/burgers');
             const data = await req.json();
-            this.burgers = data;
+            if(data.length > 0){
+                this.burgers = data
+                this.getStatus();
+            }else{
+                this.burgers = null;
+            }
 
-            this.getStatus()
 
         },
          async getStatus() {
@@ -121,7 +128,8 @@ export default {
         this.getPedidos();
     },
     components:{
-        Message
+        Message,
+        ReturnHome
     }
 }
 </script>
