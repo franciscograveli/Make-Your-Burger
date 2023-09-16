@@ -1,9 +1,7 @@
 <template>
 <div>
     <div class="d-flex-center">
-        
-        <button type="button" @click="returnHome">Fazer Pedido</button>
-         
+        <button type="button" @click="returnHome()">Fazer Pedido</button>
     </div>
 </div>
 </template>
@@ -13,7 +11,7 @@ export default {
     name: 'ReturnHome',
     methods:{
         returnHome(){
-            this.$router.push('/')
+            this.$router.push('/');
         }
     }
 }

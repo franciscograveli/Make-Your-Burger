@@ -12,6 +12,9 @@
     "backend": "json-server --watch db/db.json"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
     "json-server": "^0.17.3",
     "sweetalert2": "^11.6.13",
     "vue": "^3.3.4",
@@ -25,5 +28,4 @@
     "vite": "^4.4.9",
     "vitest": "^0.34.2"
   }
-
 }
